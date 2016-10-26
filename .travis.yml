@@ -1,0 +1,7 @@
+language: php
+php:
+  - 7
+script:
+  - vendor/bin/phpunit -c phpunit.xml --coverage-clover=coverage.clover
+before_script:
+  - composer install
